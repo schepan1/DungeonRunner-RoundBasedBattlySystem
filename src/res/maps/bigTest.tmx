@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="70" height="80" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="ER" value="true"/>
+ </properties>
+ <tileset firstgid="1" name="TileA2 + Tapetes - Kopie" tilewidth="32" tileheight="32">
+  <image source="TileA2 + Tapetes - Kopie.png" width="512" height="384"/>
+ </tileset>
+ <layer name="Kachelebene 1" width="70" height="80">
+  <properties>
+   <property name="ER" value="true"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMRKCUBBEwZ9xH0y8/8koAkJKRb4zVnXw8tmOdhljLIGe5e0b1x/H5dzlURgXLldtuHDhwoULFy59ceHChQsXLg1x4cKFCxcuDXHh8qkJFy5c7nNJlDZ45XKU3tQQFy5c5tik97TEhQsXLly4NMSFCxcuXLg0xIULFy5cuDTEhQsXLly4NMSFCxcuXHImXLhwuccmvaclLly4cOHCJZ3/hQuXOS7vlN7d6vJt6btbHP65DY4OGrqAVwAA
+  </data>
+ </layer>
+ <layer name="Kachelebene 2" width="70" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwZRC5MRoBXAAA=
+  </data>
+ </layer>
+</map>

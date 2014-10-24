@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="22" height="22" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tentInterior" tilewidth="32" tileheight="32">
+  <image source="tentInterior.png" width="256" height="800"/>
+  <tile id="37">
+   <properties>
+    <property name="back" value="true"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="back" value="true"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="back" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="201" name="tentExterior" tilewidth="32" tileheight="32">
+  <image source="tentExterior.png" width="512" height="512"/>
+  <tile id="16">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="37">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="42">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="457" name="tentInner" tilewidth="32" tileheight="32">
+  <image source="tentInner.png" width="320" height="192"/>
+ </tileset>
+ <layer name="Kachelebene 1" width="22" height="22">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NkYGBgHAaYiUhMCzNJNXvU3FFzR80dNXfUXOKxHBTLQ7ECFJNjFjJWA2J1NKxBBXPJxQAOKTSykAcAAA==
+  </data>
+ </layer>
+ <layer name="Kachelebene 2" width="22" height="22">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+XSSw7BUBjF8V62IDHGCrACrMqIgdduzCzCa06EeCbeoYiJxF9qIFzt/YhB4yS/NLk9OW3SWtZrFOpooPlGC+17V2k2dOmgi56HPgaGm7fMscASK6zv10e3sw22gt0hRhi7dCaYYibY3WEP26VzwBEnwW4wYN61TT8aCWm6Ec6iiD3dq5rPahNnL4Gk4P1MkmIvjcwXu377H5TgfwgIun7MGWHlXCX3vk3tB5ufJosc8i6di3J6WcFuCWVUPJ5dQFGw+4+5AjtXq1aQBwAA
+  </data>
+ </layer>
+</map>

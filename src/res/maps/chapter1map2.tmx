@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="enemy" value="&quot;20&quot;"/>
+ </properties>
+ <tileset firstgid="1" name="tilee" tilewidth="32" tileheight="32">
+  <image source="tilee.png" width="512" height="512"/>
+  <tile id="48">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="98">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="114">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="257" name="map1" tilewidth="32" tileheight="32">
+  <image source="map1.png" width="256" height="512"/>
+  <tile id="6">
+   <properties>
+    <property name="isBack" value="true"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="isDoor" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="385" name="tilea4" tilewidth="32" tileheight="32">
+  <image source="tilea4.png" width="512" height="480"/>
+  <tile id="228">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="625" name="PathAndObjects_0" tilewidth="32" tileheight="32">
+  <image source="PathAndObjects_0.png" width="512" height="480"/>
+  <tile id="89">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="865" name="TileD_VX" tilewidth="32" tileheight="32">
+  <image source="TileD_VX.png" width="512" height="512"/>
+  <tile id="64">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="92">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="97">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Kachelebene 1" width="20" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACzvFxMBwigBmZ0RgQmpB+BcBrMiIwPjUwczjYsaPkc3Dpw5mHrJ6SvCoeYPPPPT0Ral56OmLUvPUqWQWNc3Lp6H7qI0B9/H2T7AEAAA=
+  </data>
+ </layer>
+ <layer name="Kachelebene 2" width="20" height="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGFwglIU0cWLBRTT+Qmbs6jIZiTPvIRp/Iw7zBivA5X9CcjCQiBZO+Pw/GMOG2HgmVi96eOAC6hTYCwLmjAhMLfPWMFDXPGT3URsAACtdBwWwBAAA
+  </data>
+ </layer>
+</map>

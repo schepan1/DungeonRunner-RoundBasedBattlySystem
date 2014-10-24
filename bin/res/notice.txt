@@ -1,0 +1,7 @@
+Tiled Map Initialisierungsbefehle:
+
+isDoor = transfer zur nächsten Map mit id+1.
+isBack = transfer zur vorherigen Map mit id-1.
+blocked = passierbar oder nicht.
+back = Setzt bei einer submap einen backTransfer, dessen Koordinaten zuvor durch eine
+simpleTransfer gesetzt werden, die beiden müssen zusammen benutzt werden.
