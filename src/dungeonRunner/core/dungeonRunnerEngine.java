@@ -44,7 +44,7 @@ public class dungeonRunnerEngine extends BasicGame {
 	 * 
 	 **/
 	
-	public static boolean developerMode = true;
+	public static boolean developerMode = false;
 	public static boolean fullscreen = false;
 	public static boolean showHitboxes = false;
 	public static boolean showInteractionHitBoxes = false;
