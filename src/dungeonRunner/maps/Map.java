@@ -23,6 +23,7 @@ import dungeonRunner.GameObjects.DezoyNPC;
 import dungeonRunner.GameObjects.NPC;
 import dungeonRunner.GameObjects.NPCbrian;
 import dungeonRunner.GameObjects.NPCcain;
+import dungeonRunner.GameObjects.NPCcorpse;
 import dungeonRunner.GameObjects.Player;
 import dungeonRunner.GameObjects.RolanNPC;
 import dungeonRunner.GameObjects.animalBat;
@@ -140,6 +141,10 @@ public class Map {
 	
 	public void addBatNPCBrian(int x, int y) throws SlickException{
 		npcList.add(new NPCbrian(x, y, "Brian", 12, 12, this));
+	}
+	
+	public void addBatNPCCorpse(float x, float y) throws SlickException{
+		npcList.add(new NPCcorpse(x, y, "", 12, 12, this));
 	}
 	
 	

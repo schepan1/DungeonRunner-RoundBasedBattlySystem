@@ -11,6 +11,7 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.Sound;
+import org.newdawn.slick.SpriteSheet;
 import org.newdawn.slick.geom.Shape;
 import org.newdawn.slick.util.FontUtils;
 import org.newdawn.slick.util.Log;
@@ -51,6 +52,11 @@ public class NPC {
 	public Image enemyImage;
 	public Sound onDie;
 	public boolean quest;
+	
+	public SpriteSheet standSouth;
+	public SpriteSheet standNorth;
+	public SpriteSheet standEast;
+	public SpriteSheet standWest;
 
 	
 	public NPC(float x, float y, String pName , float moveSpeedX, float moveSpeedY, Map map) throws SlickException{
@@ -79,21 +85,26 @@ public class NPC {
 	}
 	
 		
-	
-	public void die(){
-		if(health <= 0){
-			alive = false;
-		}
 		
-	}
+
 	
 	public void renderEnemy(Graphics g){
 		
-		drawNPCName(g, Color.white);
+		drawNPCName(g, Color.green.brighter());
 		
-		g.setColor(Color.red);
-		g.fillRect(x, y, 32, 32);
-		g.setColor(Color.black);
+		
+		if(this.ausrichtung == dungeonRunnerPlayerLookState.South){
+			standSouth.draw(x,y);
+		}
+		if(this.ausrichtung == dungeonRunnerPlayerLookState.North){
+			standNorth.draw(x,y);
+		}
+		if(this.ausrichtung == dungeonRunnerPlayerLookState.West){
+			standWest.draw(x,y);
+		}
+		if(this.ausrichtung == dungeonRunnerPlayerLookState.East){
+			standEast.draw(x,y);
+		}
 	}
 	
 
@@ -113,6 +124,26 @@ public class NPC {
  		 				
  		if(interActionHitbox1.intersects(Player.hitbox) && dungeonRunnerEngine.inputHandler.isKeyPressed(Input.KEY_ENTER) || interActionHitbox2.intersects(Player.hitbox) && dungeonRunnerEngine.inputHandler.isKeyPressed(Input.KEY_ENTER) ){
 			this.action();
+			
+			if(interActionHitbox1.intersects(Player.hitbox) && Player.x < x){
+				Player.ausrichtung = dungeonRunnerPlayerLookState.East;
+				this.ausrichtung = dungeonRunnerPlayerLookState.West;
+				}
+			if(interActionHitbox1.intersects(Player.hitbox) && Player.x > x){
+				Player.ausrichtung = dungeonRunnerPlayerLookState.West;
+				this.ausrichtung = dungeonRunnerPlayerLookState.East;
+				}
+			if(interActionHitbox2.intersects(Player.hitbox) && Player.y > y){
+				Player.ausrichtung = dungeonRunnerPlayerLookState.North;
+				this.ausrichtung = dungeonRunnerPlayerLookState.South;
+				}
+			if(interActionHitbox2.intersects(Player.hitbox) && Player.y < y){
+				Player.ausrichtung = dungeonRunnerPlayerLookState.South;
+				this.ausrichtung = dungeonRunnerPlayerLookState.North;
+						
+						
+				}
+			
 		}
 			
 		if(hitbox.intersects(Player.hitbox)){

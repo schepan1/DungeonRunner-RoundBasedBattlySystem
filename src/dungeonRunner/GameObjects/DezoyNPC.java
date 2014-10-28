@@ -33,8 +33,7 @@ public class DezoyNPC extends NPC {
 	
 	public Animation batAnimationUp;
 	public SpriteSheet batSheetUp;
-	
-	public SpriteSheet stand;
+		
 	public dungeonRunnerTextField text;
 	
 	public boolean dropped;
@@ -54,32 +53,17 @@ public class DezoyNPC extends NPC {
 		givesExperience = 5;
 		enemyImage = new Image("res/sprites/enemies/bat/batImage.png");
 		
-		batSheetRight = new SpriteSheet("res/sprites/enemies/rolan/right.png", 32, 32);
-		batAnimationRight = new Animation(batSheetRight, 300);
-
-		batSheetLeft = new SpriteSheet("res/sprites/enemies/rolan/left.png", 32, 32);
-		batAnimationLeft = new Animation(batSheetLeft, 300);
+	
 		
-		batSheetDown = new SpriteSheet("res/sprites/enemies/rolan/down.png", 32, 32);
-		batAnimationDown = new Animation(batSheetDown, 300);
-		
-		batSheetUp = new SpriteSheet("res/sprites/enemies/rolan/up.png", 32, 32);
-		batAnimationUp = new Animation(batSheetUp, 300);
-		
-		stand = new SpriteSheet("res/sprites/enemies/dezoy/standDown.png", 32, 32);
+		standSouth= new SpriteSheet("res/sprites/enemies/dezoy/standDown.png", 32, 32);
+		standNorth = new SpriteSheet("res/sprites/enemies/dezoy/standUp.png", 32, 32);
+		standWest = new SpriteSheet("res/sprites/enemies/dezoy/standLeft.png", 32, 32);
+		standEast = new SpriteSheet("res/sprites/enemies/dezoy/standRight.png", 32, 32);
 		
 		hitbox = new org.newdawn.slick.geom.Rectangle(x, y, 32, 32);
 		
 	}
 	
-	
-	@Override
-	public void renderEnemy(Graphics g){
-		
-		drawNPCName(g, Color.green.brighter());
-		
-		stand.draw(x, y);
-	}
 	
 	
 	
@@ -90,8 +74,6 @@ public class DezoyNPC extends NPC {
 	}
 		
 	
-
-
 
 	}
 	

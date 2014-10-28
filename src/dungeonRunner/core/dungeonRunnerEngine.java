@@ -44,7 +44,7 @@ public class dungeonRunnerEngine extends BasicGame {
 	 * 
 	 **/
 	
-	public static boolean developerMode = false;
+	public static boolean developerMode = true;
 	public static boolean fullscreen = false;
 	public static boolean showHitboxes = false;
 	public static boolean showInteractionHitBoxes = false;
@@ -258,6 +258,7 @@ public class dungeonRunnerEngine extends BasicGame {
 		
 		// Map mit NPC füllen
 		map001.addBatNPCAnimalBat();
+		map006.addBatNPCCorpse(11f, 7.5f);
 		map009.addBatNPCRolan();
 		map009.addBatNPCDezoy();
 		map009.addBatNPCCain(13, 9);

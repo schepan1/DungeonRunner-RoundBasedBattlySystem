@@ -19,7 +19,7 @@ import dungeonRunner.util.dungeonRunnerFonts;
 import dungeonRunner.util.dungeonRunnerPlayerLookState;
 import dungeonRunner.util.dungeonRunnerTextField;
 
-public class NPCcain extends NPC {
+public class NPCcorpse extends NPC {
 	
 	
 	public SpriteSheet batSheetRight;
@@ -35,7 +35,6 @@ public class NPCcain extends NPC {
 	public SpriteSheet batSheetUp;
 	
 	public SpriteSheet stand;
-	public dungeonRunnerTextField text;
 	
 	public boolean dropped;
 
@@ -44,7 +43,7 @@ public class NPCcain extends NPC {
 	
 	public Integer attackDamage;
 	
-	public NPCcain(float x, float y, String pName, float moveSpeedX, float moveSpeedY, Map map) throws SlickException{
+	public NPCcorpse(float x, float y, String pName, float moveSpeedX, float moveSpeedY, Map map) throws SlickException{
 		super(x,y, pName, moveSpeedX, moveSpeedY, map);	
 		
 		attackDamage = 11;
@@ -67,7 +66,7 @@ public class NPCcain extends NPC {
 	
 	@Override
 	public void action(){
-		System.out.println("A dead Corpse");
+		System.out.println("A corpse..");
 	}
 		
 	

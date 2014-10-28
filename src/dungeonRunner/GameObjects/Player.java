@@ -239,7 +239,7 @@ public class Player {
 			}
 		} else if (dungeonRunnerEngine.inputHandler.isKeyDown(Input.KEY_A)) {
 
-			if (!checkIntersection() && !checkIntersection() && !(currentMap.isBlocked(x - dungeonRunnerEngine.fdelta, y) || currentMap.isBlocked(x - dungeonRunnerEngine.fdelta, y + SIZE - 1)) ) {
+			if (!checkIntersection() && !(currentMap.isBlocked(x - dungeonRunnerEngine.fdelta, y) || currentMap.isBlocked(x - dungeonRunnerEngine.fdelta, y + SIZE - 1)) ) {
 
 				x -= dungeonRunnerEngine.fdelta +3;
 				Player.ausrichtung = dungeonRunnerPlayerLookState.West ;
