@@ -54,10 +54,10 @@ public class NPCcain extends NPC {
 		
 		ausrichtung = dungeonRunnerPlayerLookState.West;	
 
-		standSouth= new SpriteSheet("res/sprites/enemies/NPCcorpseCitizen/corpse.png", 32, 32);
-		standNorth = new SpriteSheet("res/sprites/enemies/NPCcorpseCitizen/corpse.png", 32, 32);
-		standWest = new SpriteSheet("res/sprites/enemies/NPCcorpseCitizen/corpse.png", 32, 32);
-		standEast = new SpriteSheet("res/sprites/enemies/NPCcorpseCitizen/corpse.png", 32, 32);
+		standSouth= new SpriteSheet("res/sprites/enemies/NPCcain/standDown.png", 32, 32);
+		standNorth = new SpriteSheet("res/sprites/enemies/NPCcain/standUp.png", 32, 32);
+		standWest = new SpriteSheet("res/sprites/enemies/NPCcain/standLeft.png", 32, 32);
+		standEast = new SpriteSheet("res/sprites/enemies/NPCcain/standRight.png", 32, 32);
 		
 		hitbox = new org.newdawn.slick.geom.Rectangle(x, y, 32, 32);
 	}
@@ -67,7 +67,7 @@ public class NPCcain extends NPC {
 	
 	@Override
 	public void action(){
-		System.out.println("A dead Corpse");
+		System.out.println("Cain");
 	}
 		
 	
